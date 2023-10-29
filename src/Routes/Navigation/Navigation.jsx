@@ -6,7 +6,7 @@ import CartDropdownComponent from '../../Components/CartDropdown/CartDropdownCom
 import { UserContext } from '../../contexts/UserContext';
 import { CartContext } from '../../contexts/CartContext';
 
-import { ReactComponent as CrwnLogo } from '../../assets/crown.svg';
+import { ReactComponent as CartLogo } from '../../assets/cart.svg';
 
 import { signOutAuthUser } from '../../utils/firebase/firebase.utils';
 
@@ -25,7 +25,7 @@ const Navigation = () => {
     <Fragment>
       <NavigationContainer>
         <LogoContainer to='/'>
-          <CrwnLogo />
+          <CartLogo />
         </LogoContainer>
         <NavLinks>
           <NavLink to='/shop'>SHOP</NavLink>

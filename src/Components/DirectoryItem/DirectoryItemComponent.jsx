@@ -1,9 +1,13 @@
 import './DirectoryItem.scss';
+const {useNavigate} = require("react-router-dom");
 
-const CategoryItemComponent = ({ category }) => {
-  const { imageUrl, title } = category;
+const DirectoryItemComponent = ({ category }) => {
+  const navigate = useNavigate();
+  const { imageUrl, title, route } = category;
+
+  const navigateHandler = () => {navigate(route)};
   return (
-    <div className='directory-item-container'>
+    <div className='directory-item-container' onClick={navigateHandler}>
       <div
         className='background-image'
         style={{
@@ -18,4 +22,4 @@ const CategoryItemComponent = ({ category }) => {
   );
 };
 
-export default CategoryItemComponent;
+export default DirectoryItemComponent;
