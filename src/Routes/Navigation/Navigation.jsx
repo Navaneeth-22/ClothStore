@@ -1,20 +1,20 @@
 import { Fragment, useContext } from 'react';
-import { Outlet, Link } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 
-import CartIconComponent from '../../Components/CartIcon/CartIconComponent';
 import CartDropdownComponent from '../../Components/CartDropdown/CartDropdownComponent';
-import { UserContext } from '../../contexts/UserContext';
+import CartIconComponent from '../../Components/CartIcon/CartIconComponent';
 import { CartContext } from '../../contexts/CartContext';
+import { UserContext } from '../../contexts/UserContext';
 
 import { ReactComponent as CartLogo } from '../../assets/cart.svg';
 
 import { signOutAuthUser } from '../../utils/firebase/firebase.utils';
 
 import {
-  NavigationContainer,
   LogoContainer,
-  NavLinks,
   NavLink,
+  NavLinks,
+  NavigationContainer,
 } from './Navigation.styles';
 
 const Navigation = () => {
