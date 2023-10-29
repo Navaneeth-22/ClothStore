@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
+import ButtonComponent from '../button/ButtonComponent';
 import FormComponent from '../form-input/FormComponent';
-import ButtonComponent,{BUTTON_TYPE_CLASSES} from '../button/ButtonComponent';
 
 
 import {
@@ -9,7 +9,7 @@ import {
   createUserDocumentFromAuth,
 } from '../../utils/firebase/firebase.utils';
 
-import { SignUpContainer } from './SignUp.styles'
+import { SignUpContainer } from './SignUp.styles';
 
 const defaultFormFields = {
   displayName: '',
