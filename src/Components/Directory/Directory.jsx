@@ -4,7 +4,7 @@ import './Directory.scss';
 const categories = [
   {
     id: 1,
-    title: 'Hats',
+    title: 'Hatss',
     imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
     route: 'shop/hats'
   },
